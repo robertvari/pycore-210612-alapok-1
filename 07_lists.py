@@ -16,5 +16,30 @@ my_list = [
     my_numbers
 ]
 
-print(my_list[7][-1])
-print(my_list[0])
+# print(my_list[7][-1])
+# print(my_list[0])
+
+
+# add items to list
+my_numbers.append("Csilla")
+print(my_numbers)
+
+my_numbers.insert(2, "Laci")
+print(my_numbers)
+
+
+# remove item from list
+my_numbers.remove(56)
+print(my_numbers)
+
+del my_numbers[2]
+print(my_numbers)
+
+del my_numbers[my_numbers.index("Csilla")]
+print(my_numbers)
+
+print("Csilla" in my_numbers)
+
+# clear
+my_numbers.clear()
+print(my_numbers)
