@@ -2,4 +2,7 @@
 my_name = "Kiss Csaba"
 my_age = 32
 
-print(my_name)
+your_name, your_age, your_address = 32, "Csaba", "Budapest"
+
+print(my_name, my_age)
+print(your_name, your_age, your_address)
