@@ -17,8 +17,13 @@ sheet["A1"] = "Name"
 sheet["B1"] = "Path"
 sheet["C1"] = "Size"
 
-# save file
+sheet["A3"] = os.path.basename(my_photo)
+sheet["B3"] = my_photo
+sheet["C3"] = str(img.size)
 
+
+# save file
+workbook.save(data_file)
 
 # show image
 # img.show()
