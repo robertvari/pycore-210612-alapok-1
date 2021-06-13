@@ -20,14 +20,14 @@ sheet["B1"] = "Path"
 sheet["C1"] = "Size"
 
 for image_name in photo_list:
+    full_path = os.path.join(photo_folder, image_name)
 
     # PIL opens photo
-    img = Image.open( os.path.join(photo_folder, image_name) )
+    img = Image.open( full_path )
 
-
-sheet["A3"] = os.path.basename(my_photo)
-sheet["B3"] = my_photo
-sheet["C3"] = str(img.size)
+    sheet["A3"] = image_name
+    sheet["B3"] = full_path
+    sheet["C3"] = str(img.size)
 
 
 # save file
