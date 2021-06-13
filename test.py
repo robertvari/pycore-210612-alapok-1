@@ -1,7 +1,4 @@
-number = 10
+import os
 
-if number > 10:
-    print(number)
-
-    if number < 10:
-        print(number)
+# get absolute path to this file
+print(os.path.dirname(__file__))
