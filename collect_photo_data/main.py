@@ -19,15 +19,17 @@ sheet["A1"] = "Name"
 sheet["B1"] = "Path"
 sheet["C1"] = "Size"
 
-for image_name in photo_list:
+#    0     image_name2.jpg
+for index, image_name in enumerate(photo_list):
     full_path = os.path.join(photo_folder, image_name)
 
     # PIL opens photo
     img = Image.open( full_path )
 
-    sheet["A3"] = image_name
-    sheet["B3"] = full_path
-    sheet["C3"] = str(img.size)
+    row = index + 3
+    sheet[f"A{row}"] = image_name
+    sheet[f"B{row}"] = full_path
+    sheet[f"C{row}"] = str(img.size)
 
 
 # save file
