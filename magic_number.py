@@ -5,7 +5,6 @@ max_number = 10
 max_tries = 3
 
 magic_number = str(random.randint(min_number, max_number))
-#magic_number = "6"
 
 print(f"<<<DEBUG>>> {magic_number}")
 
@@ -14,6 +13,7 @@ print(f"I'm thinking of a number between {min_number} and {max_number}. Can you 
 print(f"You have {max_tries} tries.")
 print("="*100, "\n")
 
+# str
 player_guess = input("Your guess:")
 
 while player_guess != magic_number:
